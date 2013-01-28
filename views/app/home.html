@@ -1,0 +1,23 @@
+<Body:>
+    <h1>HOME</h1>
+    <table>
+        {#each _headlines}
+            <app:headline_item>
+        {/}
+    </table>
+
+    <form x-bind="submit: newHeadline">
+       <input type="text" id="blogPostInput" value={_headlines.name}>
+       <input type="submit" value="Submit">
+    </form>
+
+
+<headline_item:>
+    <tr>
+        <td>
+            {id}
+        </td>
+        <td>
+            {content}
+        </td>
+    </tr>

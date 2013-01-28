@@ -1,0 +1,13 @@
+{
+  "name": "first-project",
+  "description": "",
+  "version": "0.0.0",
+  "main": "./server.js",
+  "dependencies": {
+      "derby": "git://github.com/codeparty/derby#master",
+      "racer": "git://github.com/codeparty/racer#master",
+      "gzippo": ">=0.1.7",
+      "derby-auth": "0.0.24,
+  },
+  "private": true
+}
