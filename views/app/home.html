@@ -6,8 +6,9 @@
         {/}
     </table>
 
+
     <form x-bind="submit: newHeadline">
-       <input type="text" id="blogPostInput" value={_headlines.name}>
+       <input type="text" id="blogPostInput" value={_headlines}>
        <input type="submit" value="Submit">
     </form>
 
@@ -15,9 +16,6 @@
 <headline_item:>
     <tr>
         <td>
-            {1.id}
-        </td>
-        <td>
-            {content}
+            {.content}
         </td>
     </tr>
