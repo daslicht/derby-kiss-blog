@@ -1,18 +1,15 @@
 <Body:>
     <h1>HOME</h1>
-    <table>
-        {#each _blogs}
-            <tr>
-                <td>
-                    {.blog}
-                </td>
-            </tr>
-        {/}
-    </table>
+        <table>
+            {#each _blogs}
+                <tr>
+                    <td>
+                        {.name}
+                    </td>
+                </tr>
+            {/}
+        </table>
 
-    <div>
-        test {blogs}    
-</div>
 
     <form x-bind="submit: newHeadline">
        <input type="text" id="blogPostInput" value='{_inputvalue}'>
